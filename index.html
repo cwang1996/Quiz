@@ -4,9 +4,59 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+    <title>Spongebob</title>
 </head>
 <body>
-    
+    <div class="container">
+        <div class="header">
+            <h2>How well do you know Spongebob?</h2>
+            <button class='play' type="button">Start Quiz</button>
+            <img class='spongebob' src='spongebob.png'>
+        </div>
+
+        <div class="quiz1">
+            <h3><span>Q1: </span>What does this fish exclaim at the top of its lungs?</h3>
+            <img src="https://img.buzzfeed.com/buzzfeed-static/static/2021-06/29/19/enhanced/6b4bb8a5683d/enhanced-694-1624994811-2.png?output-format=jpg&output-quality=auto" alt="question1">
+            <ul>
+                <li onclick=correctAnswer1() id='1'>CHOCOLATE!</li>
+                <li onclick=question1() id='2'>FANCY</li>
+                <li onclick=question1() id='3'>SPONGEBOB</li>
+                <li onclick=question1() id='4'>BARNACLES</li>
+            </ul>
+        </div>
+
+        
+        <div class="quiz2">
+            <h3><span>Q2: </span>What is this fish whispering to the other?</h3>
+            <img src="https://img.buzzfeed.com/buzzfeed-static/static/2021-06/30/17/enhanced/3c04e2662015/enhanced-832-1625072673-25.png?output-format=jpg&output-quality=auto" alt="question2">
+            <ul>
+                <li onclick=question2() id='5'>"They'd look better covered in tartar sauce"</li>
+                <li onclick=correctAnswer2() id='6'>"This is a load of barnacles"</li>
+                <li onclick=question2() id='7'>"Someone's a little shellfish"</li>
+                <li onclick=question2() id='8'>"Hook, line, and sinker"</li>
+            </ul>
+        </div>
+
+        <div class="quiz3">
+            <h3><span>Q3: </span>What place does this fish ask Patrick if he came from?</h3>
+            <img src="https://img.buzzfeed.com/buzzfeed-static/static/2021-06/30/17/enhanced/ba73e945a9e4/enhanced-828-1625073000-17.png?output-format=webp&output-quality=auto" alt="question3">
+            <ul>
+                <li onclick=correctAnswer3() id='9'>"Stupid Town"</li>
+                <li onclick=question3() id='10'>"Idiotville"</li>
+                <li onclick=question3() id='11'>"Numnut City"</li>
+                <li onclick=question3() id='12'>"Nematode Beach"</li>
+            </ul>
+        </div>
+
+        <div class="end">
+            <h2 class='results'></h2>
+            <img class='spongebob2' src='spongebob.png'>
+        </div>
+    </div>
+
+    <audio id="laugh" src="spongeboblaugh.mp3"></audio>
+
+    <script src='app.js'></script>
 </body>
 </html>
